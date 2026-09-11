@@ -10,6 +10,9 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com
+    - icon: telegram
+      text: Telegram
+      href: https://t.me
 ---
 
 En este sitio encontrarás los reportes que se realizaron para el proyecto...

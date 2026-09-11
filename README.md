@@ -9,7 +9,18 @@ Dale click al link del sitio web que aparece junto al "About" (en la parte super
 1. Ir al botón de "Use this template" -> "Create a new repository"
 2. Llena con el nombre que quieras que tenga tu repositorio
 
-Ir a Settings -> Pages -> Build and deployment -> Source -> GitHub Actions
+## Paso 3:
+
+Ir a Settings -> Pages -> Build and deployment -> Source -> GitHub Actions. Lo único que verás en un cintillo azul que dice que se cambiaron los ajustes.
+
+🚨🚨 **Importante:** 🚨🚨
+A partir de ahora el procedimiento es ligeramente diferente al que hicimos las sesiones pasadas.
+
+## Paso 4:
+
+Abre el archivo "_quarto.yml" y observa su contenido:
+
+
 
 En el archivo "_quarto.yml" encontrarás una parte que se ve así
 

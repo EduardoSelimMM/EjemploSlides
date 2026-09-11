@@ -316,11 +316,17 @@ También bullets y enumeraciones
 + Otro otro bullet
 ```
 
-+ Un bullet
-+ Otro bullet
+```
+1. Primer item de la lista
+2. Segundo item de la lista
+3. Tercer item de la lista
   + Un sub-bullet
-  + Otro sub-bullet
-+ Otro otro bullet
+```
+
+1. Primer item de la lista
+2. Segundo item de la lista
+3. Tercer item de la lista
+  + Un sub-bullet
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

@@ -126,7 +126,7 @@ about:
 
 + El campo "template" lo cambiamos varias veces las sesión pasada. Básicamente nos da un catálogo de opciones ya armadas que no necesitan mucha configuración.
 
-+ A diferencia de la sesión pasada ahora aparecen dos nuevos links en la sección de links:
++ A diferencia de la sesión pasada ahora aparecen dos nuevos links en la sección de links (el de Telegram y el de Slack):
 
 ```
     - icon: telegram
@@ -137,6 +137,33 @@ about:
       href: https://slack.com/intl/es-mx/
 ```
 Si quieres ver la lista completa, ve a https://icons.getbootstrap.com/
+
+## Paso 6:
+
++ Abre el archivo "requirements.txt" y observa su contenido
+
++ Ahora ves
+```
+jupyter
+pandas
+polars
+matplotlib
+numpy
+statistics
+```
+en este archivo aparece lo que seguro ya te imaginas: las librerías de Python que requieren utilizas en tus archivos `.qmd`. Por ejemplo, si en alguno de tus análisis usaste funciones de las librerías Scikit-Learn (`sklearn`) y `statsmodels` simplemente las agregas en el archivo
+
+```
+jupyter
+pandas
+polars
+matplotlib
+numpy
+statistics
+sklearn
+statsmodels
+```
+
 
 
 ---

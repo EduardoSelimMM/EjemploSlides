@@ -28,7 +28,7 @@ website:
           - mis_reportes/slides-01.qmd
       - section: "Reporte en slides embebido en el sitio"
         contents:
-          - mis_reportes/ver_slides-01.qmd
+          - mis_reportes/ver-slides-01.qmd
 
 format:
   html:

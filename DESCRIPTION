@@ -7,4 +7,5 @@ Imports:
     ggplot2,
     knitr,
     rmarkdown,
-    reticulate
+    reticulate,
+    leaflet

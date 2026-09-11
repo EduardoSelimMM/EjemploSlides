@@ -299,8 +299,28 @@ Contenido slide 3
 + Dentro de cada slide, se puede usar la sintaxis Markdown/RMarkdown/Quarto que hemos usado siempo
 
 ```
-### Sub
+# Esto es un título
+
+## Esto es un subtítulo
+
+### Esto es un subsubtítulo
 ```
+
+También bullets y enumeraciones
+
+```
++ Un bullet
++ Otro bullet
+  + Un sub-bullet
+  + Otro sub-bullet
++ Otro otro bullet
+```
+
++ Un bullet
++ Otro bullet
+  + Un sub-bullet
+  + Otro sub-bullet
++ Otro otro bullet
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

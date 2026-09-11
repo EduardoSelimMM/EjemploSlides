@@ -325,18 +325,19 @@ También bullets y enumeraciones
 + Negritas: `**este texto va en negritas**` y cursivas: `*este texto va en cursiva*`
 
 + Los chunks de código se ponen como lo hemos hecho en Quarto
+
 +  Se empieza el chunk con tres \` (backtick a.k.a acento grave) y {r} o {python} dependiendo qué quieras usar y se cierra el chunk con otra tres \`
 
++ En Quarto, las opciones de chunk se escriben con el prefijo `#|` dentro del bloque de código. Por ejemplo,
+
 ```
-```{r}
-print("Hola mundo en R")
-```
+#| echo: false
+#| warning: false
 ```
 
-```{python}
-print("hola mundo en Python")
-```
++ Con `echo: false` se indica que se debe ejecutar el chunk pero sin mostrar el código y con `warning: false` se indica que no se muestren (impriman) los warnings.
 
++ Investiga que hacen las opciones `eval`, `output`, `include`, `message` y `error`
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

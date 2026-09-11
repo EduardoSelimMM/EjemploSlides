@@ -96,7 +96,48 @@ https://quarto.org/docs/output-formats/html-themes.html
 
 + Abre el archivo "index.qmd" y observa su contenido
 
-+ 
++ Ahora ves:
+
+```
+---
+title: "Reportes trimestrales"
+image: foto_gato.jpg
+about:
+  template: jolla   # opciones: jolla, trestles, solana, marquee, broadside
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: telegram
+      text: Telegram
+      href: https://t.me
+    - icon: slack
+      text: Slack
+      href: https://slack.com/intl/es-mx/
+---
+```
+
++ Cambia el "title" por uno que te guste más, por ejemplo `title: "Listado de reportes..."`
+
++ En "image" se le debe indicar lo que estás pensando. La imagen del gatito que aparece en la landing page.
+
++ El campo "template" lo cambiamos varias veces las sesión pasada. Básicamente nos da un catálogo de opciones ya armadas que no necesitan mucha configuración.
+
++ A diferencia de la sesión pasada ahora aparecen dos nuevos links en la sección de links:
+
+```
+    - icon: telegram
+      text: Telegram
+      href: https://t.me
+    - icon: slack
+      text: Slack
+      href: https://slack.com/intl/es-mx/
+```
+Si quieres ver la lista completa, ve a https://icons.getbootstrap.com/
+
 
 ---
 

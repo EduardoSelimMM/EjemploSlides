@@ -296,6 +296,12 @@ Contenido slide 3
 ---
 ```
 
++ Dentro de cada slide, se puede usar la sintaxis Markdown/RMarkdown/Quarto que hemos usado siempo
+
+```
+### Sub
+```
+
 ## Slides embebidos (embedded) dentro de un sitio web
 
 + Abre el archivo "mis_reportes/ver-slides-01.qmd" y observa tu contenido

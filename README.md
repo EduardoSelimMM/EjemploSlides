@@ -350,6 +350,22 @@ También bullets y enumeraciones
 :::
 ```
 
++ En slides también es común querer escribir a dos columnas. Para esto se usa `::: {.columns}` y luego `::: {.column}`
+
+```
+::: {.columns}
+::: {.column width="50%"}
+Contenido columna 1
+:::
+
+::: {.column width="50%"}
+Contenido columna 2
+:::
+:::
+
+```
+
+
 ## Slides embebidos (embedded) dentro de un sitio web
 
 + Abre el archivo "mis_reportes/ver-slides-01.qmd" y observa tu contenido

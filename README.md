@@ -221,3 +221,45 @@ Imports:
 + Si haces cambios en tus archivos para modificar algo. Modifica todo lo que tengas que modificar y después vuelve a hacer: Actions -> All workflows -> Publicar sitio Quarto en GitHub Pages -> Run workflow y espera a que vuelva a renderear tu sitio
 
 + **Observación:** Si una vez que terminó el workflow tu sitio parece no haber hecho los cambios, dale refresh en tu navegador
+
+# Entendamos los archivos que generan los slides que ya aparecen en nuestros sitio
+
++ Abre el archivo "mis_reportes/slides-01.qmd" y observa tu contenido
+
++ Ahora ves
+
+```
+---
+title: "Slides con R y Python"
+subtitle: "Mis resultados en slides"
+author: "Tu nombre"
+format:
+  revealjs:
+    theme: moon
+    transition: slide
+    slide-number: true
+    incremental: false
+    code-line-numbers: true
+---
+```
+
+"title", "subtitle" y "author" indican lo que estás imaginando: El título, subtítulo y nombre de la persona autora de los slides. Cambia estos valores con tus favoritos.
+
++ También ves:
+
+```
+format:
+  revealjs:
+    theme: moon
+    transition: slide
+    slide-number: true
+    incremental: false
+    code-line-numbers: true
+```
+
+En "theme" se pone el nombre de alguna de las varias plantillas existentes. Ahora está `moon`.
+
+Otras opciones disponibles son beige, blood, dark, default, dracula, league, moon, night, serif, simple, sky, solarized
+
+Si quieres ver cómo se ven éstas, dale click a https://revealjs.com/themes/
+

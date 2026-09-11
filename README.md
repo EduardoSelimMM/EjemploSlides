@@ -350,7 +350,7 @@ También bullets y enumeraciones
 :::
 ```
 
-+ En slides también es común querer escribir a dos columnas. Para esto se usa `::: {.columns}` y luego `::: {.column}`
++ En slides también es común querer escribir a dos (o más) columnas. Para esto se usa `::: {.columns}` y luego `::: {.column}`
 
 ```
 ::: {.columns}
@@ -364,6 +364,8 @@ Contenido columna 2
 :::
 
 ```
+
++ Revisa más opciones en: https://quarto.org/docs/presentations/
 
 
 ## Slides embebidos (embedded) dentro de un sitio web

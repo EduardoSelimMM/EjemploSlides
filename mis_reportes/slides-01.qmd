@@ -99,6 +99,45 @@ Algunos puntos clave sobre Quarto:
 
 ---
 
+```{r}
+#| echo: true
+#| output-location: slide
+library(leaflet)
+
+leaflet() |>
+  addTiles() |>
+  setView(lng = -99.1332, lat = 19.4326, zoom = 11) |>
+  addMarkers(
+    lng = -99.1332, lat = 19.4326,
+    popup = "Zócalo, CDMX"
+  ) |>
+  addCircleMarkers(
+    lng = -99.1677, lat = 19.4270,
+    radius = 8, color = "orange",
+    popup = "Chapultepec"
+  )
+```
+
+---
+
+```{python}
+#| echo: true
+import folium
+
+m = folium.Map(
+    location=[19.4326, -99.1332],
+    zoom_start=10,
+    width="100%",
+    height=400
+)
+
+folium.Marker(
+    [19.4326, -99.1332],
+    popup="Zócalo, CDMX"
+).add_to(m)
+
+m
+```
 ## Gracias {.center}
 
 ¿Preguntas?

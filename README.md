@@ -34,7 +34,7 @@ website:
 
 + Modifica el "title" por el título que quieres que tenga tu sitio
 + Ya dijimos en la sesión pasada que "navbar" indica que agregarás una barra de navegación (los links en la parte superior del sitio)
-+ **Importante:** El archivo "index.qmd" siempre debe existir y con ese nombre. Éste es archivo que construye tu landing page (lo primero que se abre al darle click al link de tu sitio)
++ 🚨🚨 **Importante:** 🚨🚨 El archivo "index.qmd" siempre debe existir y con ese nombre. Éste es archivo que construye tu landing page (lo primero que se abre al darle click al link de tu sitio)
 + Puedes cambiar el "text" por otro que te guste
 
 + La sesión pasada también ya dijimos que "sidebar" agrega una barra lateral
@@ -53,6 +53,9 @@ website:
       - section: "Último reporte"
         contents:
           - mis_reportes/reporte-03.qmd
+      - section: "Reporte con dos lenguajes"
+        contents:
+          - mis_reportes/reporte-04.qmd
       - section: "Reporte pero en slides"
         contents:
           - mis_reportes/slides-01.qmd
@@ -63,9 +66,13 @@ website:
 
 + Observa que con `section: "Título de la sección"` y `contents:` seguido de "mis_reportes/reporte-0X.qmd" se le dice a Quarto que quiero mostrar un nuevo contenido que construí mediante un archivo Quarto individual ("reporte-0X.qmd")
 
-+ **IMPORTANTE:** Recuerda que la indentación en el archivo "_quarto.yml" es importante, i.e. los espacios y tabuladores iniciales en cada línea son importantes. Te recomiendo copiar/pegar.
++ Esto significa que en la carpeta "mis_reportes" deben vivir todos los reportes individuales que quiero mostrar.
 
-+  
++ 🚨🚨 **Importante:** 🚨🚨 Recuerda que la indentación en el archivo "_quarto.yml" es importante, i.e. los espacios y tabuladores iniciales en cada línea son importantes. Te recomiendo copiar/pegar.
+
++ Los reportes "reporte-01.qmd", "reporte-02.qmd", "reporte-03.qmd" y "reporte-04.qmd" son los mismos que revisamos la sesión pasada.
+
++ Los archivos "slides-01.qmd" y "ver-slides-01.qmd" son nuevos... los revisaremos más adelante
 
 
 

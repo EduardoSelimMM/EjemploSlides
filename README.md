@@ -250,16 +250,18 @@ format:
 ```
 format:
   revealjs:
-    theme: moon
+    theme: simple
     transition: slide
     slide-number: true
     incremental: false
     code-line-numbers: true
 ```
 
-En "theme" se pone el nombre de alguna de las varias plantillas existentes. Ahora está `moon`.
++ En "theme" se pone el nombre de alguna de las varias plantillas existentes. Ahora está `simple`.
 
-Otras opciones disponibles son beige, blood, dark, default, dracula, league, moon, night, serif, simple, sky, solarized
++ Otras opciones disponibles son beige, blood, dark, default, dracula, league, moon, night, serif, simple, sky, solarized
 
-Si quieres ver cómo se ven éstas, dale click a https://revealjs.com/themes/
++ Si quieres ver cómo se ven éstas, dale click a https://revealjs.com/themes/
+
++ Explora el sitio y cambia de plantilla
 

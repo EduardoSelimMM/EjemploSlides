@@ -199,154 +199,25 @@ Imports:
     caret
 ```
 
----
+## Paso 8:
 
-Crear un documento que se llame
-".github/workflows/publish.yml"
++ Ahora vamos a crear la GitHub Page, i.e. el link donde la gente consumirá tu sitio web
 
-Con el siguiente contenido
++ Dentro del sitio de tu repositorio. Busca la sección de "Actions" en la parte superior
 
-```
-name: Publicar sitio Quarto en GitHub Pages
++ En la barra lateral izquierda encontrarás la sección "Actions". Justo abajito aparece la sección "All workflows" y justo abajito aparece la sección "Publicar sitio Quarto en GitHub Pages". Dale click a este último
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
++ En la sección principal verás un cintillo azul que dice "This workflow has a workflow_dispatch event trigger" y un botón "Run workflow". En el selector de dicho botón dale click a "Run workflow" y la magia empezará a ocurrir.... 
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
++ Ir a "Actions" de nuevo. Dar click al único workflow y esperar a que termine
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
++ Una vez que termine el workflow te mostrará el link de tu sitio web
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clonar repositorio
-        uses: actions/checkout@v4
++ Para que lo tengas a la mano todo el tiempo, haz lo siguiente:
 
-      - name: Instalar Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
+  + Ve a la página principal de tu repositorio (aquí en GitHub). Del lado derecho encontrarás la palabra "About" con una tuerquita de lado derecho
+  + Marca la casilla de "Use your GitHub Pages website" y "Save changes". Ahora verás la dirección de tu sitio justo debajo de la palabra "About"
 
-      - name: Instalar R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: "release"
++ Si haces cambios en tus archivos para modificar algo. Modifica todo lo que tengas que modificar y después vuelve a hacer: Actions -> All workflows -> Publicar sitio Quarto en GitHub Pages -> Run workflow y espera a que vuelva a renderear tu sitio
 
-      - name: Instalar paquetes de R
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::ggplot2
-            any::dplyr
-            any::knitr
-            any::rmarkdown
-            any::readr
-
-      - name: Renderizar sitio
-        run: quarto render
-
-      - name: Subir artefacto para Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Desplegar en GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-Una vez que exista el documento "publish.yml" se empezará a crear el sitio. Esto tomará unos minutos
-
-Ir a "Actions". Dar click al único workflow y esperar a que termine
-
-Una vez que termine el workflow te mostrará el link de tu sitio web.
-
-Para que lo tengas a la mano todo el tiempo, haz lo siguiente:
-
-Ve a la página principal de tu repositorio (aquí en GitHub). Del lado derecho encontrarás la palabra "About" con una tuerquita de lado derecho.
-
-Marca la casilla de "Use your GitHub Pages website" y "Save changes". Ahora verás la dirección de tu sitio justo debajo de la palabra "About"
-
-## ¿Quieres agregar chunks de R y Python en un mismo reporte?
-
-Ve archivo "publish.yml"
-
-```
-name: Publicar sitio Quarto en GitHub Pages
-
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clonar repositorio
-        uses: actions/checkout@v4
-
-      - name: Instalar Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Instalar R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: "release"
-
-      - name: Instalar paquetes de R
-        uses: r-lib/actions/setup-r-dependencies@v2
-
-      - name: Instalar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: 'pip'
-
-      - name: Instalar paquetes de Python
-        run: pip install -r requirements.txt
-
-      - name: Renderizar sitio
-        run: quarto render
-        env:
-          RETICULATE_PYTHON: ${{ env.pythonLocation }}/bin/python3
-
-      - name: Subir artefacto para Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Desplegar en GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-```
-
++ **Observación:** Si una vez que terminó el workflow tu sitio parece no haber hecho los cambios, dale refresh en tu navegador

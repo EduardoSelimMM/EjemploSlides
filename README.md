@@ -22,6 +22,52 @@ A partir de ahora el procedimiento es ligeramente diferente al que hicimos las s
 
 Abre el archivo "_quarto.yml" y observa su contenido:
 
+Ahora ves:
+```
+website:
+  title: "Mi sitio de reportes"
+  navbar:
+    left:
+      - text: "Sobre este sitio"
+        href: index.qmd
+```
+
++ Modifica el "title" por el título que quieres que tenga tu sitio
++ Ya dijimos en la sesión pasada que "navbar" indica que agregarás una barra de navegación (los links en la parte superior del sitio)
++ **Importante:** El archivo "index.qmd" siempre debe existir y con ese nombre. Éste es archivo que construye tu landing page (lo primero que se abre al darle click al link de tu sitio)
++ Puedes cambiar el "text" por otro que te guste
+
++ La sesión pasada también ya dijimos que "sidebar" agrega una barra lateral
+
+```
+  sidebar:
+    style: docked
+    contents:
+      - index.qmd
+      - section: "Primer reporte"
+        contents:
+          - mis_reportes/reporte-01.qmd
+      - section: "Segundo reporte"
+        contents:
+          - mis_reportes/reporte-02.qmd
+      - section: "Último reporte"
+        contents:
+          - mis_reportes/reporte-03.qmd
+      - section: "Reporte pero en slides"
+        contents:
+          - mis_reportes/slides-01.qmd
+      - section: "Reporte en slides embebido en el sitio"
+        contents:
+          - mis_reportes/ver_slides-01.qmd
+```
+
++ Observa que con `section: "Título de la sección"` y `contents:` seguido de "mis_reportes/reporte-0X.qmd" se le dice a Quarto que quiero mostrar un nuevo contenido que construí mediante un archivo Quarto individual ("reporte-0X.qmd")
+
++ **IMPORTANTE:** Recuerda que la indentación en el archivo "_quarto.yml" es importante, i.e. los espacios y tabuladores iniciales en cada línea son importantes. Te recomiendo copiar/pegar.
+
++  
+
+
 
 
 En el archivo "_quarto.yml" encontrarás una parte que se ve así

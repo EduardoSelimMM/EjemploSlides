@@ -328,9 +328,9 @@ También bullets y enumeraciones
 +  Se empieza el chunk con tres \` (backtick a.k.a acento grave) y {r} o {python} dependiendo qué quieras usar y se cierra el chunk con otra tres \`
 
 ```
-\`\`\`{r}
+```{r}
 print("Hola mundo en R")
-\`\`\`
+```
 ```
 
 ```{python}

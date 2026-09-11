@@ -320,13 +320,10 @@ También bullets y enumeraciones
 1. Primer item de la lista
 2. Segundo item de la lista
 3. Tercer item de la lista
-  + Un sub-bullet
 ```
 
-1. Primer item de la lista
-2. Segundo item de la lista
-3. Tercer item de la lista
-  + Un sub-bullet
++ Negritas `**este texto va en negritas**` y `*este texto va en cursiva*`
++ **este texto va en negritas** y *este texto va en cursiva*
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

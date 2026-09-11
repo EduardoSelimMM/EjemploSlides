@@ -66,18 +66,17 @@ website:
 
 + Observa que con `section: "Título de la sección"` y `contents:` seguido de "mis_reportes/reporte-0X.qmd" se le dice a Quarto que quiero mostrar un nuevo contenido que construí mediante un archivo Quarto individual ("reporte-0X.qmd")
 
-+ Esto significa que en la carpeta "mis_reportes" deben vivir todos los reportes individuales que quiero mostrar.
++ Esto significa que en la carpeta "mis_reportes" deben vivir todos los reportes individuales que quiero mostrar
 
-+ 🚨🚨 **Importante:** 🚨🚨 Recuerda que la indentación en el archivo "_quarto.yml" es importante, i.e. los espacios y tabuladores iniciales en cada línea son importantes. Te recomiendo copiar/pegar.
++ Si quieres mostrar nuevo contenido, agrega un bloque "section -> contents" como ves los otros
 
-+ Los reportes "reporte-01.qmd", "reporte-02.qmd", "reporte-03.qmd" y "reporte-04.qmd" son los mismos que revisamos la sesión pasada.
++ 🚨🚨 **Importante:** 🚨🚨 Recuerda que la indentación en el archivo "_quarto.yml" es importante, i.e. los espacios y tabuladores iniciales en cada línea son importantes. Te recomiendo copiar/pegar
+
++ Los reportes "reporte-01.qmd", "reporte-02.qmd", "reporte-03.qmd" y "reporte-04.qmd" son los mismos que revisamos la sesión pasada
 
 + Los archivos "slides-01.qmd" y "ver-slides-01.qmd" son nuevos... los revisaremos más adelante
 
-
-
-
-En el archivo "_quarto.yml" encontrarás una parte que se ve así
++ Ya vimos como cambiar el tema (colores) general del sitio 
 
 ```
 format:
@@ -87,19 +86,15 @@ format:
     lang: es
 ```
 
-Pues cambiar el `theme`. Ahora está en minty. Puedes seleccionar de entre las opciones
++ Puedes cambiar el `theme`. Ahora está en minty. Puedes seleccionar de entre las opciones
 
 https://quarto.org/docs/output-formats/html-themes.html
 
-Supongamos que me gustó el tema "superhero". Entonces lo cambio
++ Cambia el theme por uno que te guste, por ejemplo `theme: superhero`
 
-```
-format:
-  html:
-    theme: superhero
-    toc: true
-    lang: es
-```
+
+
+---
 
 Crear un documento que se llame
 ".github/workflows/publish.yml"

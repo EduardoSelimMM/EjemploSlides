@@ -151,7 +151,7 @@ matplotlib
 numpy
 statistics
 ```
-en este archivo aparece lo que seguro ya te imaginas: las librerías de Python que requieren utilizas en tus archivos `.qmd`. Por ejemplo, si en alguno de tus análisis usaste funciones de las librerías Scikit-Learn (`sklearn`) y `statsmodels` simplemente las agregas en el archivo
+en este archivo aparece lo que seguro ya te imaginas: las librerías de Python que utilizas en tus archivos `.qmd`. Por ejemplo, si en alguno de tus análisis usaste funciones de las librerías Scikit-Learn (`sklearn`) y `statsmodels` simplemente las agregas en el archivo
 
 ```
 jupyter
@@ -164,7 +164,40 @@ sklearn
 statsmodels
 ```
 
+## Paso 7:
 
++ Abre el archivo "DESCRIPTION" (nota que no tiene ninguna extensión "txt", "md", "qmd"... NO necesita extensión) y observa su contenido
+
++ Ahora ves
+
+```
+Package: misitio
+Type: Package
+Title: Mi sitio web con Quarto
+Version: 1.0.0
+Imports:
+    dplyr,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    reticulate
+```
+en este archivo aparece lo que seguro ya te imaginas: las librerías de R que utilizas en tus archivos `.qmd`. Por ejemplo, si en alguno de tus análisis usaste funciones de las librerías (`readr`) y `caret` simplemente las agregas en el archivo. Nota que la indentación y las comas son importantes en este archivo.
+
+```
+Package: misitio
+Type: Package
+Title: Mi sitio web con Quarto
+Version: 1.0.0
+Imports:
+    dplyr,
+    ggplot2,
+    knitr,
+    rmarkdown,
+    reticulate,
+    readr,
+    caret
+```
 
 ---
 

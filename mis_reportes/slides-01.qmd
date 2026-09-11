@@ -20,10 +20,6 @@ Esta presentación combina:
 - Gráficos generados en vivo
 - Layout en columnas
 
-::: {.notes}
-Nota para el orador: También puedo agregar notas
-:::
-
 ---
 
 ## Chunk de R

@@ -13,6 +13,9 @@ about:
     - icon: telegram
       text: Telegram
       href: https://t.me
+    - icon: slack
+      text: Slack
+      href: https://slack.com/intl/es-mx/
 ---
 
 En este sitio encontrarás los reportes que se realizaron para el proyecto...

@@ -4,4 +4,3 @@ polars
 matplotlib
 numpy
 statistics
-folium

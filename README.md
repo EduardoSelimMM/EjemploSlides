@@ -322,8 +322,18 @@ También bullets y enumeraciones
 3. Tercer item de la lista
 ```
 
-+ Negritas `**este texto va en negritas**` y `*este texto va en cursiva*`
-+ **este texto va en negritas** y *este texto va en cursiva*
++ Negritas: `**este texto va en negritas**` y cursivas: `*este texto va en cursiva*`
+
++ Los chunks de código se ponen como lo hemos hecho en Quarto
+
+```{r}
+print("Hola mundo en R")
+```
+
+```{python}
+print("hola mundo en Python")
+```
+
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

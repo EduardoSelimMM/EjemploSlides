@@ -337,7 +337,18 @@ También bullets y enumeraciones
 
 + Con `echo: false` se indica que se debe ejecutar el chunk pero sin mostrar el código y con `warning: false` se indica que no se muestren (impriman) los warnings.
 
-+ Investiga que hacen las opciones `eval`, `output`, `include`, `message` y `error`
++ Investiga qué hacen las opciones `eval`, `output`, `include`, `message` y `error` en https://quarto.org/docs/computations/execution-options.html
+
++ En slides en particular, se suelen usar los bullets incrementales (click -> siguiente bullet) para esto se usa `:::` junto con `{.incremental}`
+
+```
+::: {.incremental}
+- Primer bullet
+- Segundo bullet
+- Tercer bullet
+- Cuarto bullet
+:::
+```
 
 ## Slides embebidos (embedded) dentro de un sitio web
 

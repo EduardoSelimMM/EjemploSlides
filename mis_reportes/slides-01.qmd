@@ -4,7 +4,7 @@ subtitle: "Mis resultados en slides"
 author: "Tu nombre"
 format:
   revealjs:
-    theme: simple
+    theme: moon
     transition: slide
     slide-number: true
     incremental: false

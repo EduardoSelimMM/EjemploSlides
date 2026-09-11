@@ -224,6 +224,8 @@ Imports:
 
 # Entendamos los archivos que generan los slides que ya aparecen en nuestros sitio
 
+## Slides como su propio sitio web
+
 + Abre el archivo "mis_reportes/slides-01.qmd" y observa tu contenido
 
 + Ahora ves
@@ -250,6 +252,17 @@ format:
 ```
 format:
   revealjs:
+```
+
++ **Reveal.js** es un framework de código abierto basado en HTML/CSS/JS que permite crear presentaciones web interactivas y dinámicas directamente en tu navegador web favorito... Es lo que usa Quarto para generar slides
+
++ Pero tranquilízate, Quarto agregó una capa de sintaxis para que no tengas que escribir código Reveal.js "puro". Utiliza muchas funciones que generan plantillas para que sea sencillo para uno que no es web developer "nativo".
+
++ También ves:
+
+```
+format:
+  revealjs:
     theme: simple
     transition: slide
     slide-number: true
@@ -264,4 +277,40 @@ format:
 + Si quieres ver cómo se ven éstas, dale click a https://revealjs.com/themes/
 
 + Explora el sitio y cambia de plantilla
+
++ En general se separan las slides de la siguiente manera
+
+```
+---
+
+Contenido slide 1
+
+---
+
+Contenido slide 2
+
+---
+
+Contenido slide 3
+
+---
+```
+
+## Slides embebidos (embedded) dentro de un sitio web
+
++ Abre el archivo "mis_reportes/ver-slides-01.qmd" y observa tu contenido
+
++ Ahora se ve simplemente
+
+```
+<iframe src="slides-01.html" width="100%" height="700" style="border:none;"></iframe>
+```
+
++ Básicamente se mete en un "frame" (iframe) el archivo HTML que Quarto crea con los slides rendereados.
+
++ **OJO**: Nota que en el source dice `src="slides-01.html"` NO "slides-01.qmd". Tras bambalinas GitHub al crear el sitio genera el archivo "slides-01.html", que es la versión renderizada del archivo "slides-01.qmd"
+
++ Cambia los valores en `width="100%" height="700"` para modificar el tamaño del frame
+
+
 

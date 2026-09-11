@@ -384,5 +384,58 @@ Contenido columna 2
 
 + Cambia los valores en `width="100%" height="700"` para modificar el tamaño del frame
 
+## Pequeño ejercicio
+
+### 1. Agrega un slide con el siguiente código de R
+
+```
+#| echo: true
+#| output-location: slide
+library(leaflet)
+
+leaflet() |>
+  addTiles() |>
+  setView(lng = -99.1332, lat = 19.4326, zoom = 11) |>
+  addMarkers(
+    lng = -99.1332, lat = 19.4326,
+    popup = "Zócalo, CDMX"
+  ) |>
+  addCircleMarkers(
+    lng = -99.1677, lat = 19.4270,
+    radius = 8, color = "orange",
+    popup = "Chapultepec"
+  )
+```
+
+### 2. Agrega un slide con el siguiente código de Python
+
+```
+#| echo: true
+import folium
+
+m = folium.Map(
+    location=[19.4326, -99.1332],
+    zoom_start=10,
+    width="100%",
+    height=400
+)
+
+folium.Marker(
+    [19.4326, -99.1332],
+    popup="Zócalo, CDMX"
+).add_to(m)
+
+m
+```
+
+### 3. Modifica los archivos de librerías faltantes
+
+Modifica los archivos `requirements.txt` y `DESCRIPTION` para agregar las librerías que se usan en los chunks anteriores pero que aún no se indica que sean instaladas
+
+### 4. Renderea de nuevo tu sitio
+
+Haz el Actions -> All workflows -> Publicar sitio Quarto en GitHub Pages -> Run workflow y espera a que vuelva a renderear tu sitio
+
+¿Qué se puede ver en las dos slides agregadas?
 
 

@@ -61,7 +61,7 @@ website:
           - mis_reportes/slides-01.qmd
       - section: "Reporte en slides embebido en el sitio"
         contents:
-          - mis_reportes/ver_slides-01.qmd
+          - mis_reportes/ver-slides-01.qmd
 ```
 
 + Observa que con `section: "Título de la sección"` y `contents:` seguido de "mis_reportes/reporte-0X.qmd" se le dice a Quarto que quiero mostrar un nuevo contenido que construí mediante un archivo Quarto individual ("reporte-0X.qmd")
@@ -92,7 +92,11 @@ https://quarto.org/docs/output-formats/html-themes.html
 
 + Cambia el theme por uno que te guste, por ejemplo `theme: superhero`
 
+## Paso 5:
 
++ Abre el archivo "index.qmd" y observa su contenido
+
++ 
 
 ---
 

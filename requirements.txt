@@ -2,3 +2,5 @@ jupyter
 pandas
 polars
 matplotlib
+numpy
+statistics

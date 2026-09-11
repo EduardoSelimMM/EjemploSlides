@@ -325,7 +325,7 @@ También bullets y enumeraciones
 + Negritas: `**este texto va en negritas**` y cursivas: `*este texto va en cursiva*`
 
 + Los chunks de código se ponen como lo hemos hecho en Quarto
-+  Se empieza el chunk con tres \` y {r} o {python} dependiendo qué quieras usar y se cierra el chunk con 
++  Se empieza el chunk con tres \` (backtick a.k.a acento grave) y {r} o {python} dependiendo qué quieras usar y se cierra el chunk con otra tres \`
 
 ```{r}
 print("Hola mundo en R")
